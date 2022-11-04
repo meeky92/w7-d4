@@ -59,11 +59,12 @@
     function buildPokedex(pokeInfo){
         let card = document.createElement('div');
         card.className = 'card h-100 mb-3';
-        card.style = 'width: 15rem'
+        card.style = 'width: 18rem'
 
         let image = document.createElement('img');
         image.className = 'card-img-top';
-        image.src = pokeInfo.sprites.front_shiny;
+        // image.src = pokeInfo.sprites.front_shiny;
+        image.src = pokeInfo.sprites.versions["generation-v"]["black-white"].animated.front_shiny;
         card.append(image);
 
         let cardBody = document.createElement('div');
