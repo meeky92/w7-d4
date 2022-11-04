@@ -58,7 +58,8 @@
     // }
     function buildPokedex(pokeInfo){
         let card = document.createElement('div');
-        card.className = 'card';
+        card.className = 'card h-100 mb-3';
+        card.style = 'width: 15rem'
 
         let image = document.createElement('img');
         image.className = 'card-img-top';
@@ -74,7 +75,7 @@
 
         let pokeHeight = document.createElement('p');
         pokeHeight.className = 'card-text';
-        pokeHeight.innerHTML = `Height: ${pokeInfo.height}cm`;
+        pokeHeight.innerHTML = `Height: ${pokeInfo.height}m`;
         
         let pokeWeight = document.createElement('p');
         pokeWeight.className = "card-text";
